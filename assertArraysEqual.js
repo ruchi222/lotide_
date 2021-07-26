@@ -20,6 +20,4 @@ const eqArrays = function(arr1, arr2) {
     return true;
 };
 
-// TEST CODE
-assertArraysEqual("Lighthouse Labs", "Lighthouse Labs");
-assertArraysEqual([1, 5], [1, 5]);
+module.exports = assertArraysEqual;
