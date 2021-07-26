@@ -8,8 +8,8 @@
 //   };
   
   const tail = function(array) {
-    const newArray = array.slice(1);
-    return newArray;
+    const newArray = array.slice(-1);
+    return newArray[0];
   };
 
   module.exports = tail; 
