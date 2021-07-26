@@ -1,5 +1,5 @@
 const withOut = function(source, itemsToRemove) {
-    let newArray = [...source];
+    let newArray = [source];
     for (let i = 0; i <= newArray.length; i++) {
         for (value of itemsToRemove) {
             if (source[i] === value) {
@@ -34,8 +34,8 @@ const eqArrays = function(arr1, arr2) {
 
 //Test Code
 
-// withOut([1, 2, 3], [1]) // => [2, 3]
-// withOut(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+withOut([1, 2, 3], [1]) // => [2, 3]
+withOut(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
 
 const words = ["hello", "world", "lighthouse"];
 withOut(words, ["lighthouse"]); // no need to capture return value for this test case
